@@ -1,0 +1,90 @@
+.playerContainer {
+  //vertical 3 rem 4 horizontal
+  padding: 3rem 4rem;
+  width: 26.5rem;
+  height: 100vh;
+
+  background: var(--purple-500);
+  color: var(--white);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  header {
+    display: flex;
+    align-items: center;
+    gap: 1rem; //afasta a imagem do texto tocando agora ou element que estão dentro do header
+  }
+  strong {
+    font-family: Lexend; //fonte do projeto muda o formato de texto
+    font-weight: 600;
+  }
+  footer {
+    &empty {
+      align-items: stretch; //vai fazer ele ocupar a largura toda pra n mudar as configuração pq tã todos item desse campo playerContainer como center ai teve que usar o streatch
+      //qnd ele estiver com a estilização empty eu vou dar um opacity em todo conteudo dele
+      opacity: 0.5;
+    }
+  }
+}
+//aqui é aquela abinha do player bem loco
+.emptyPlayer {
+  width: 100%;
+  height: 20rem; //=320px
+  border: 1.5px dashed var;
+  border: 1.5px dashed var(--purple-300);
+  border-radius: 1.5rem;
+  background: linear-gradient(
+    143.8deg,
+    rgba(145, 100, 250, 0.8) 0%,
+    rgba(0, 0, 0, 0) 100%
+  ); //rotação do angulo
+
+  padding: 4rem; //fica um pocuo pra baixo o texto
+  text-align: center; //texto fica no centro bonitinho
+  justify-content: center;
+}
+.progress {
+  display: flex; //deixa os numero lado a lado
+  align-items: center; //os numero do span centralizado um com outro
+  gap: 0.5rem; //afasta os numeros um do outro
+  font-size: 0.875rem;
+  span {
+    display: inline-block;
+    width: 4rem; //afasto um dos numero 00 64px pro lado ou ocupa isso
+    text-align: center; //centraliza os numerozinho
+  }
+
+  .slider {
+    flex: 1;
+    .emptySlider {
+      //criando a linha entro os numero deve ser do tempo da musica ou player dps
+      width: 100%; //ocupa toda largura
+      height: 4px; //altura dele
+      background: var(--purple-300);
+      border-radius: 2px;
+    }
+  }
+}
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2.5rem;
+  gap: 1.5rem;
+
+  button {
+    background: transparent; //dos botões fica com a cor do background do player roxinho padrão que tava
+    border: 0; //tira a borda dos buttons
+    font-size: 0; //fica centralizado a size do button
+
+    &.playButton {
+      width: 4rem;
+      height: 4rem;
+      border-radius: 1rem;
+      background: var(--purple-400);
+    }
+  }
+}

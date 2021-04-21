@@ -1,0 +1,21 @@
+.HeaderContainer {
+  background: var(--white);
+  height: 6.5rem; //em torno de 104px
+
+  display: flex; //um do lado do outro
+  align-items: center;
+
+  padding: 2rem 4rem;
+
+  border-bottom: 1px solid var(--gray-100);
+
+  p {
+    margin-left: 2rem;
+    padding: 0.25rem 0 0.25rem 2rem;
+    border-left: 1px solid var(--gray-100); //vai cria uma bordinha do lado da logo
+  }
+  span {
+    margin-left: auto; //vai fazer um espaçamento pro left o maximo possivel ir pra lá >> o texto final da pagina
+    text-transform: capitalize; //cada letra da palavra vai ficar em maiusculo
+  }
+}
