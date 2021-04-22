@@ -1,8 +1,8 @@
-.HeaderContainer {
-  background: var(--white);
-  height: 6.5rem; //em torno de 104px
+.headerContainer {
+  background-color: var(--white);
+  height: 6.7rem;
 
-  display: flex; //um do lado do outro
+  display: flex;
   align-items: center;
 
   padding: 2rem 4rem;
@@ -12,10 +12,11 @@
   p {
     margin-left: 2rem;
     padding: 0.25rem 0 0.25rem 2rem;
-    border-left: 1px solid var(--gray-100); //vai cria uma bordinha do lado da logo
+    border-left: 1px solid var(--gray-100);
   }
+
   span {
-    margin-left: auto; //vai fazer um espaçamento pro left o maximo possivel ir pra lá >> o texto final da pagina
-    text-transform: capitalize; //cada letra da palavra vai ficar em maiusculo
+    margin-left: auto;
+    text-transform: capitalize;
   }
 }
