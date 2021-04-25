@@ -1,22 +1,24 @@
 .headerContainer {
-  background-color: var(--white);
-  height: 6.7rem;
+	// background: var(--white);
+	 background: var(--header-color);
+	height: 6.5rem;
 
-  display: flex;
-  align-items: center;
+	display: flex;
+	align-items: center;
+	/* 2rem vertical e 4 rem horizontal*/
+	padding: 2rem 4rem;
 
-  padding: 2rem 4rem;
+	// border-bottom: 1px solid var(--gray-100);
+	border-bottom: 1px solid var(--border-color);
 
-  border-bottom: 1px solid var(--gray-100);
-
-  p {
-    margin-left: 2rem;
-    padding: 0.25rem 0 0.25rem 2rem;
-    border-left: 1px solid var(--gray-100);
-  }
-
-  span {
-    margin-left: auto;
-    text-transform: capitalize;
-  }
+	p {
+		margin-left: 2rem;
+		padding: 0.25rem 0 0.25rem 2rem;
+		// border-left: 1px solid var(--gray-100);
+		border-left: 1px solid var(--font-main-color);
+	}
+	span {
+		margin-left: auto;
+		text-transform: capitalize;
+	}
 }

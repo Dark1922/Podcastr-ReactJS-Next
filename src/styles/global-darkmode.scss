@@ -5,6 +5,15 @@
 }
 
 :root {
+
+	--header-color: #000000;
+	--border-color: rgb(121, 119, 119);
+	--body-background: rgb(68, 67, 67);
+	--box-background: rgb(179, 179, 179);
+	--font-main-color: rgb(255, 255, 255);
+	--link-details: rgb(237, 237, 237);
+
+
 	--white: #fff;
 
 	--gray-50: #f7f8fa;
@@ -32,7 +41,8 @@
 }
 
 body {
-	background: var(--gray-50);
+	// background: var(--gray-50);
+	background: var(--body-background);
 }
 
 body,
@@ -40,7 +50,8 @@ input,
 textarea,
 button {
 	font: 500 1rem Inter,sans-serif;
-	color: var(--gray-500);
+	// color: var(--gray-500);
+	color: var(--font-main-color);
 }
 h1,
 h2,
@@ -50,7 +61,8 @@ h5,
 h6 {
 	font-weight: 600;
 	font-family: Lexend, sans-serif;
-	color: var(--gray-800);
+	// color: var(--gray-800);
+	color: var(--font-main-color);
 }
 
 h1 {
